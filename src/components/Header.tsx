@@ -5,9 +5,10 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/40">
       <nav className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
-        <a href="#" className="font-serif text-2xl tracking-tight text-foreground">
+        <a href="#" className="font-serif text-2xl tracking-tight text-foreground flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-sage inline-block" />
           Hvile
         </a>
 
@@ -43,7 +44,7 @@ export function Header() {
           href="#contact"
           className="hidden md:inline-flex px-5 py-2.5 bg-primary text-primary-foreground text-sm rounded-full hover:opacity-90 transition-opacity duration-300"
         >
-          Начать путь
+          Попробовать бесплатно
         </a>
 
         {/* Mobile Menu Button */}
@@ -93,7 +94,7 @@ export function Header() {
               onClick={() => setIsOpen(false)}
               className="mt-2 px-5 py-2.5 bg-primary text-primary-foreground text-sm rounded-full text-center"
             >
-              Начать путь
+              Попробовать бесплатно
             </a>
           </div>
         </div>

@@ -4,7 +4,8 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
-          <a href="#" className="font-serif text-2xl tracking-tight text-foreground">
+          <a href="#" className="font-serif text-2xl tracking-tight text-foreground flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-sage inline-block" />
             Hvile
           </a>
 
@@ -19,21 +20,23 @@ export function Footer() {
             <a href="#pricing" className="hover:text-foreground transition-colors duration-300">
               Тарифы
             </a>
-            <a href="#" className="hover:text-foreground transition-colors duration-300">
-              Политика
+            <a href="#contact" className="hover:text-foreground transition-colors duration-300">
+              Контакты
             </a>
             <a href="#" className="hover:text-foreground transition-colors duration-300">
-              Условия
+              Политика конфиденциальности
             </a>
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-muted-foreground">2026 Hvile. Все права защищены.</p>
+          <p className="text-sm text-muted-foreground">© 2026 Hvile. Все права защищены.</p>
         </div>
 
         {/* Large decorative logo */}
-        <div className="mt-20 text-center">
-          <span className="font-serif text-[12rem] md:text-[16rem] leading-none text-border/50 select-none">H</span>
+        <div className="mt-20 text-center overflow-hidden">
+          <span className="font-serif text-[12rem] md:text-[16rem] leading-none text-border/40 select-none">
+            Hvile
+          </span>
         </div>
       </div>
     </footer>
